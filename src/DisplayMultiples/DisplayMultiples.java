@@ -16,7 +16,8 @@ public class DisplayMultiples {
 			System.out.println(+number+"x"+counter+" = "+number*counter);
 
 		}
-
+		in.close();
 	}
 
+	
 }
