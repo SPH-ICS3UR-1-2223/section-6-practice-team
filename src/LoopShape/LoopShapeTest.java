@@ -5,5 +5,7 @@ public class LoopShapeTest {
         
         LoopShape.createRectangle(5, 4);
         LoopShape.createTriangle(5);
+        
+        
     }   
 }
