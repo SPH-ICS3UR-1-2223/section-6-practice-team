@@ -37,34 +37,39 @@ public class LoopShape {
 
 	static void createTriangle(int leg) {
 		// Draw an Isosceles Right Triangle
-	System.out.println(" ");
-	// if line is 1
-	for (int line = 1; line <= leg; line++) {
-
-	if (line ==1) {
-		// print one symbol
-		System.out.println("#");
-	}
-
-	// else if line < leg
-	else if (line < leg);
-		//print one symbol
-	System.out.println("#");
-		//loop line-2 times
-	for (int counter=1;counter<=line-2;counter++) {
-		//print space
 		System.out.println(" ");
-	}
-	
-	//print one symbol and newline
-	System.out.println("#");
-		
-	}
-	//else
-		//loop leg times
-			//print symbol
+		// if line is 1
+		for (int i = 1; i <= leg; i++) {
+
+			if (i == 1) {
+				// print one symbol
+				System.out.println("#");
+			}
+
+			// else if line < leg
+			else if (i < leg) {
+				// print one symbol
+				System.out.print("#");
+				// loop line-2 times
+				for (int j = 1; j <= i - 2; j++) {
+					// print space
+					System.out.print(" ");
+				}
+
+				// print one symbol and newline
+				System.out.println("#");
+
+			} else {
+				// loop leg times
+				for (int count = 0; count < leg; count++) {
+					System.out.print("#");
+				}
+
+				// print symbol
+
+			}
+
+		}
 
 	}
-	
 }
-
